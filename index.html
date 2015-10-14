@@ -7,7 +7,6 @@
   <section class="container">
     <div class="row">
       <div class="col-sm-5 target">
-
       </div>
     </dvi>
   </section>
@@ -23,19 +22,23 @@
     }
   });
 
-  var Thumbnail = React.createClass ({
-    render: function () {
-      return
-      <div class="thumbnail">
-        <img src="..." alt="...">
-        <div class="caption">
-          <h3>Thumbnail label</h3>
-          <p>TestTestTest</p>
-          <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+  var Thumbnail = React.createClass({
+    render: function() {
+      return <div className="thumbnail">
+        <div className="thumbnail">
+          <img src=".." alt="..."></img>
+          <div className="caption">
+            <h3>Thumbnail</h3>
+            <p>...</p>
+            <p>
+            <a href="#" className="btn btn-primary" role="button">Button</a>
+            <a href="#" className="btn btn-default" role="button">Button</a>
+            </p>
+          </div>
         </div>
       </div>
     }
-  })
+  });
 
   // Initial setup options provided to the Badge componenet
   var options = {
@@ -44,7 +47,7 @@
   };
 
   // React, please render this class
-  var element = React.createElement(Badge, options);
+  var element = React.createElement(Thumbnail, options);
 
   // React, after you render this class, please place it in my body tag
   React.render(element, document.querySelector('.target'));
